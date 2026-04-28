@@ -1,0 +1,139 @@
+.navbar {
+    width: 100%;
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /* ⬆️ increased size */
+    padding: 14px 32px;
+
+    box-sizing: border-box;
+}
+
+/* 🎬 Netflix-style logo */
+.brand {
+    font-weight: 900;
+    font-size: 26px;
+    letter-spacing: 2px;
+    color: #e50914;
+    /* Netflix red */
+    font-family: 'Bebas Neue', 'Arial Black', sans-serif;
+
+    /* subtle glow */
+    text-shadow: 0 0 8px rgba(229, 9, 20, 0.6);
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+/* ⬆️ wider dropdown */
+.dropdown {
+    position: relative;
+    min-width: 220px;
+    background-color: #222222;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ⬆️ bigger button */
+.toggleButton {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.03);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    padding: 10px 14px;
+    border-radius: 8px;
+
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.toggleButton:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+/* ⬆️ slightly bigger images */
+.optionImg {
+    width: 50px;
+    height: 36px;
+    object-fit: cover;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+
+.optionLabel {
+    flex-grow: 1;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.caret {
+    margin-left: 8px;
+    font-size: 12px;
+    opacity: 0.9;
+}
+
+/* ⬆️ wider dropdown menu */
+.optionsList {
+    position: absolute;
+    right: 0;
+    top: calc(100% + 10px);
+
+    background: #0b0b0b;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+
+    padding: 8px;
+    list-style: none;
+    margin: 0;
+
+    min-width: 260px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+    z-index: 999;
+}
+
+/* ⬆️ more spacing */
+.optionItem {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 10px 12px;
+    border-radius: 8px;
+
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.15s ease;
+    margin-bottom: 6px;
+}
+
+.optionItem:hover {
+    background: #222222
+}
+
+.optionItemActive {
+    background-color: #222222;
+}
+
+/* center section */
+.pageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: calc(100vh - 72px);
+    padding: 1rem;
+}
+
+.heading {
+    margin: 0;
+    font-size: 2.8rem;
+}

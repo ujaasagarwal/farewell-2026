@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url("../assets/hero.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    padding: 20px;
+}
+
+.title {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 32px;
+    font-family: netfilx;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    transition: transform 150ms ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.cardBtn {
+    width: 160px;
+    height: 160px;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    background-color: transparent;
+    display: block;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.cardImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.uiFix {
+    margin-top: 8px;
+    transform: scale(1.6);
+    object-position: center;
+    transition: transform 150ms ease;
+}
+
+.label {
+    font-size: 12px;
+    color: grey;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.addProfile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.addBtn {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #808080;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.plus {
+    font-size: 80px;
+    font-weight: 500;
+    color: #1a1a1a;
+    line-height: 1;
+}
+
+.addText {
+    font-size: 14px;
+    color: #808080;
+    text-align: center;
+    font-weight: 400;
+}
+
+@media (max-width: 1024px) {
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .cardBtn {
+        width: 140px;
+        height: 140px;
+    }
+
+    .uiFix {
+        transform: scale(1.5);
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .cards {
+        gap: 12px;
+    }
+
+    .cardBtn {
+        width: 120px;
+        height: 120px;
+    }
+
+    .uiFix {
+        transform: scale(1.4);
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.6rem;
+    }
+
+    .cardBtn {
+        width: 100px;
+        height: 100px;
+    }
+
+    .uiFix {
+        transform: scale(1.3);
+    }
+
+    .plus {
+        font-size: 60px;
+    }
+
+    .addBtn {
+        width: 60px;
+        height: 60px;
+    }
+}
